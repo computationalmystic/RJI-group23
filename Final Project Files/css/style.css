@@ -1,0 +1,33 @@
+/* Header */
+.large-header {
+  position: relative;
+  width: 100%;
+  background: #333;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center center;
+  z-index: 1;
+}
+#large-header {
+  background-image: url("https://static1.squarespace.com/static/59decda418b27ddf3baeb5ba/t/59df05c6a8b2b02752fad4dc/1507788230333/Black.jpg?format=1500w");
+}
+.main-title {
+  margin: 0;
+  padding: 0;
+  color: #f9f1e9;
+  top: 50%;
+  left: 50%;
+}
+.demo-1 .main-title {
+  text-transform: uppercase;
+  font-size: 4.2em;
+  letter-spacing: 0.1em;
+}
+.main-title .thin {
+  font-weight: 200;
+}
+@media only screen and (max-width: 768px) {
+  .demo-1 .main-title {
+    font-size: 3em;
+  }
+}

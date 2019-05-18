@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <style>
+            body{
+            color: white;
+            background: rgba(2, 1, 0, .5);
+            }
+        </style>
+    </head>
+<body>
+
+<form action="manager.php" method="post" enctype="multipart/form-data">
+    <table width="100%">
+        <tr>
+            <td>Select Photo (one or multiple):</td>
+            <td><input type="file" name="files[]" multiple/></td>
+        </tr>
+        <tr>
+            <td colspan="2" align="center">Supported image format: .jpeg | Maximum upload: 30 files.</td>
+        </tr>
+        <tr>
+            <td colspan="2" align="center"><input type="submit" value="Upload" id="selectedButton"/></td>
+        </tr>
+    </table>
+</form>
+
+</body>
+</html>
