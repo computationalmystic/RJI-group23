@@ -2,29 +2,124 @@
 <html>
     <head>
         <meta charset="UTF-8">
+        <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans" rel="stylesheet">
         <style>
             body{
             color: white;
             background: rgba(2, 1, 0, .5);
+                font-family: 'IBM Plex Sans', sans-serif;
+                height: 100%;
+                width: 100%;
+                font-size: 20px;
             }
+
+            tr {
+                border: 1px solid black;
+                border-collapse: collapse;
+            }
+            th, td {
+                padding: 15px;
+            }
+            h1{
+                font-family: 'IBM Plex Sans', sans-serif;
+            }
+            h2{
+                font-family: 'IBM Plex Sans', sans-serif;
+            }
+    
+            .upload-btn-wrapper {
+                position: relative;
+                overflow: hidden;
+                display: inline;
+            }
+
+            input {
+                border: 2px white;
+                color: white;
+                background-color: grey;
+                padding: 8px 20px;
+                border-radius: 8px;
+                font-size: 20px;
+            }
+
+            h1{
+                color: white;
+                font-size: 30px;
+            }
+
+            h2{
+                color: white;
+                font-size: 25px;
+            }
+
+            .upload-btn-wrapper input[type=file] {
+                font-size: 100px;
+                position: absolute;
+                left: 0;
+                top: 0;
+                opacity: 0;
+            }
+            
+            #upload{
+                background-color: gray;
+                color: white;
+                border: 2px solid white;
+                border-radius: 8px;
+                font-family: 'IBM Plex Sans', sans-serif;
+                
+            }
+            
+            #files{
+                border: 2px solid white;
+                color: white;
+                background-color: grey;
+                padding: 8px 20px;
+                border-radius: 8px;
+                font-size: 20px;
+                font-family: 'IBM Plex Sans', sans-serif;
+            }
+            
+            
+            .btn1 {
+        border: 2px solid white;
+        color: white;
+        background-color: grey;
+        padding: 8px 20px;
+        border-radius: 8px;
+        font-size: 20px;
+                margin: 0px;
+    }
+
+    .btn2 {
+        border: 2px solid white;
+        color: white;
+        background-color: grey;
+        padding: 8px 20px;
+        border-radius: 8px;
+        font-size: 20px;
+        margin: 0px;
+    }
+            
+           
         </style>
     </head>
 <body>
-
-<form action="manager.php" method="post" enctype="multipart/form-data">
-    <table width="100%">
-        <tr>
-            <td>Select Photo (one or multiple):</td>
-            <td><input type="file" name="files[]" multiple/></td>
-        </tr>
-        <tr>
-            <td colspan="2" align="center">Supported image format: .jpeg | Maximum upload: 30 files.</td>
-        </tr>
-        <tr>
-            <td colspan="2" align="center"><input type="submit" value="Upload" id="selectedButton"/></td>
-        </tr>
-    </table>
-</form>
+    <center>
+<div id="wrapper">
+    <form action="manager.php" method="post" enctype="multipart/form-data">
+        <h1>Select Photos (one or multiple):</h1>
+            <div class="upload-btn-wrapper">
+          <button class="btn1">Choose Files</button>
+          <input class="bttn2" id="files" type="file" name="files[]" multiple/>
+      </div>
+    <br>
+          <h2>Supported image format: .jpeg | Maximum upload: 30 files.</h2>
+    <br>
+            <input id="upload" type="submit" value="Upload" id="selectedButton"/>
+       
+    </form>
+    </div>
+        </center>
 
 </body>
 </html>
