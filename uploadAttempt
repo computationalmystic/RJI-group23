@@ -1,0 +1,94 @@
+<html>
+<head>
+<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans" rel="stylesheet">
+<style>
+  
+  table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+  th, td {
+    padding: 15px;
+  }
+  h1{
+    font-family: 'IBM Plex Sans', sans-serif;
+  }
+  h2{
+    font-family: 'IBM Plex Sans', sans-serif;
+  }
+  
+</style>
+</head>
+<body>
+  
+<h1><center>Select Photos (one or multiple):</center>
+  </h1>
+  
+  <center>
+  <div class="upload-btn-wrapper">
+  <button class="btn1">Choose Files</button>
+  <input type="file" name="myfile"/>
+  <center/>  
+</div>
+  
+<h2><center>Supported image format: jpeg  |  Max upload: 30 files at once</center></h2>
+  
+<center>
+  <div class="upload-btn-wrapper"> 
+  <button class="btn2">Upload</button>
+  <button type="submit" name="myfile" />   
+</div>
+<center/>
+
+<td>
+
+</td>
+</tr>
+
+</body>
+</html>
+
+.upload-btn-wrapper {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.btn1 {
+  border: 2px white;
+  color: white;
+  background-color: grey;
+  padding: 8px 20px;
+  border-radius: 8px;
+  font-size: 20px;
+}
+
+.btn2 {
+  border: 2px white;
+  color: white;
+  background-color: grey;
+  padding: 8px 20px;
+  border-radius: 8px;
+  font-size: 20px;
+}
+
+.btn2 disabled{
+  opacity: 0.65; 
+  cursor: not-allowed;
+}
+h1{
+color: white:
+}
+
+h2{
+color: white;
+}
+
+.upload-btn-wrapper input[type=file] {
+  font-size: 100px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+}
+
